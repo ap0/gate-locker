@@ -1,0 +1,11 @@
+./claude
+./vscode
+
+gate-locker
+gate-locker-arm64
+
+# macOS
+.DS_Store
+
+# ESP32 secrets
+esp32/secrets.py

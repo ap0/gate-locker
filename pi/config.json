@@ -1,0 +1,14 @@
+{
+  "gpio": {
+    "esp_signal_pin": 26,
+    "esp_response_pin": 15,
+    "unlock_relay_pin": 25
+  },
+  "api": {
+    "port": ":8080"
+  },
+  "doorbell": {
+    "enabled": false,
+    "host": "lightning-control.local:8080"
+  }
+}

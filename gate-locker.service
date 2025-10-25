@@ -1,0 +1,21 @@
+[Unit]
+Description=Gate Locker Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=adam
+WorkingDirectory=/opt/gate-locker
+ExecStart=/opt/gate-locker/gate-locker
+StandardOutput=journal
+StandardError=journal
+
+# Restart settings
+StartLimitBurst=5
+StartLimitIntervalSec=300
+
+[Install]
+WantedBy=multi-user.target
